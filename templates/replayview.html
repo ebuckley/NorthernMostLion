@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Viewing A Replay</title>
+        <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="/static/css/main.css" type="text/css" media="screen" charset="utf-8">
+
+    </head>
+<body>
+    <div id="main">
+        <h3 id="">{% for person in players %}{{person}}{% endfor %}</h3>
+        <br/> 
+        <p>
+            <b>Winner: {{winners}}</b>
+            <br />
+            <b>Match Length: {{matchlength}}</b>
+            <ul>
+            {% for person in players %}
+
+            <li> {{person}} {{person.result}}</li>
+            {% endfor %}
+            </ul>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+body {
+    background: url("/static/img/logo.jpg") #000  no-repeat;
+}
+#main {
+    margin: 0 auto 0;
+    width: 400px;
+    background: #fff;
+}

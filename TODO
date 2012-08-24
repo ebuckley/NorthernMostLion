@@ -1,2 +1,4 @@
 Find out how to handle file uploads
+    fix the connection reset bug when you try to upload a valid file
 Integrate sc2reader library
+
